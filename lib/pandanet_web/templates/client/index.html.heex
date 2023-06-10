@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th> Dummy </th>
+      <th> Value </th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for x <- @list do %>
+      <%= if x != "" do %>
+        <tr>
+          <th>  </th>
+          <th><%= x %></th>
+        </tr>
+       <% end %>
+    <% end %>
+  </tbody>
+</table>
